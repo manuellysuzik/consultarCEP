@@ -10,7 +10,7 @@
   * SQLite
 
 ## Iniciando o banco de dados
-* Para criar o arquivo SQL, será necessário rodar as migrations do typeORM pelo comando:<br>
+* Para criar o arquivo do SQLite, será necessário rodar as migrations do typeORM pelo comando:<br>
 <code> yarn typeorm migration:run</code>
 <br>ou<br>
 <code> npm run typeorm migration:run</code>
