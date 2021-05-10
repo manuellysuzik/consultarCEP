@@ -9,8 +9,20 @@
   * Typecript
   * SQLite
 
-## Como usar
+## Iniciando o banco de dados
+* Para criar o arquivo SQL, será necessário rodar as migrations do typeORM pelo comando:<br>
+<code> yarn typeorm migration:run</code>
+<br>ou<br>
+<code> npm run typeorm migration:run</code>
 
+## Iniciando a API
+
+<code> yarn dev</code>
+ou
+<code>npm run dev</code>
+
+
+## Como usar
 O valor do CEP é enviado no corpo da requisição, no formato: 
 <code> {
   "CEP":000000000;
@@ -21,7 +33,4 @@ O valor do CEP é enviado no corpo da requisição, no formato:
 
 * POST : http://localhost:3333/
 
-## Iniciando a API
-<code> yarn dev</code>
-ou
-<code>npm run dev</code>
+

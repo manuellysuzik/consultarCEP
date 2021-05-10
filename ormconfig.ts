@@ -1,6 +1,6 @@
 export default {
   type: "sqlite",
-  database: './src/database/teste.sqlite',
+  database: './src/database/cepDB.sqlite',
   entities: [
     "./src/app/models/**.ts"
   ],
