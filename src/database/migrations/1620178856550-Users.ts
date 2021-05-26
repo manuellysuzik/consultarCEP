@@ -28,12 +28,12 @@ export class Users1620178856550 implements MigrationInterface {
                     },
                     {
                         name: "created_at",
-                        type: "timestamps",
+                        type: "date",
                         default: "now()" //Seleciona o valor padrão da coluna, nesse caso é a data que é criado
                     },
                     {
                         name: "updated_at",
-                        type: "timestamps", //Tipo DATA/HORA
+                        type: "date", //Tipo DATA/HORA
                         default: "now()" //Seleciona o valor padrão da coluna, nesse caso é a data que é criado
                     }
                 ]
