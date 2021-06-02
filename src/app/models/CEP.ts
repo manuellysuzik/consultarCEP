@@ -1,9 +1,9 @@
-import {v4 as uuid} from 'uuid'
-import {Max} from 'class-validator'
+import { v4 as uuid } from 'uuid'
+import { Max } from 'class-validator'
 import { BeforeInsert, Column, CreateDateColumn, Entity, PrimaryGeneratedColumn } from "typeorm";
 
 
-@Entity("databaseCEP") // normalmente é o nome do conjunto ou tables que vamos usar
+@Entity() // normalmente é o nome do conjunto ou tables que vamos usar
 export default class CEP {
   @PrimaryGeneratedColumn("uuid")// Gera automaticamente um uuid para cada usuário criado
   id: string
@@ -22,8 +22,8 @@ export default class CEP {
   updated_at: Date
 
   @BeforeInsert()
-  criarUUID(){
-    if(!this.id){
+  criarUUID() {
+    if (!this.id) {
       this.id = uuid()
     }
   }
