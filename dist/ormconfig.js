@@ -6,12 +6,13 @@ module.exports = {
         "rejectUnauthorized": false
     },
     "entities": [
-        "./dist/app/models/*.js"
+        "src/app/models/**.ts"
     ],
     "migrations": [
-        "./dist/database/migrations/*.js"
+        "src/database/migrations/**.ts"
     ],
     "cli": {
-        "migrationsDir": "./dist/database/migrations"
+        "migrationsDir": ["src/database/migrations"],
+        "entitiesDir": "src/app/models"
     }
 };
